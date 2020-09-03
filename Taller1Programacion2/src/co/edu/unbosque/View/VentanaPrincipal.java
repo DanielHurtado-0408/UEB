@@ -12,7 +12,7 @@ import co.edu.unbosque.Controller.Controller;
 public class VentanaPrincipal extends JFrame{
 	
 	private static final long serialVersionUID = 1L;
-	private PanelPrincipal panelTitulo;
+	private PanelPrincipal panelPrincipal;
 	private PanelFondo jContentPane = null;
 	private PanelAgregarAsignatura panelAgregarAsignatura;
 	
@@ -35,13 +35,14 @@ public class VentanaPrincipal extends JFrame{
 	private void inicializarComponentes() {
 
 		this.setContentPane(getJContentPane());
+
 				
-		panelTitulo = new PanelPrincipal();
-		panelTitulo.setBounds(20, 20, 450, 450);
-		add(panelTitulo);
+		panelPrincipal = new PanelPrincipal();
+		panelPrincipal.setBounds(20, 20, 450, 450);
+		add(panelPrincipal);
 		
 		panelAgregarAsignatura = new PanelAgregarAsignatura();
-		panelAgregarAsignatura.setBounds(500,150,350,350);
+		panelAgregarAsignatura.setBounds(500,150,350,250);
 		
 	}
 	
@@ -54,11 +55,11 @@ public class VentanaPrincipal extends JFrame{
 	}
 	
 	
-	public PanelPrincipal getPanelTitulo() {
-		return panelTitulo;
+	public PanelPrincipal getPanelPrincipal() {
+		return panelPrincipal;
 	}
-	public void setPanelTitulo(PanelPrincipal panelTitulo) {
-		this.panelTitulo = panelTitulo;
+	public void setPanelPrincipal(PanelPrincipal panelPrincipal) {
+		this.panelPrincipal = panelPrincipal;
 	}
 	public PanelAgregarAsignatura getPanelAgregarAsignatura() {
 		return panelAgregarAsignatura;
@@ -66,6 +67,8 @@ public class VentanaPrincipal extends JFrame{
 	public void setPanelAgregarAsignatura(PanelAgregarAsignatura panelAgregarAsignatura) {
 		this.panelAgregarAsignatura = panelAgregarAsignatura;
 	}
+	
+	
 	
 	
 	
